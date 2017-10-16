@@ -1,8 +1,4 @@
 {
-   "background": {
-      "persistent": false,
-      "scripts": [ "tracktime.js" ]
-   },
    "chrome_url_overrides": {
       "newtab": "dashboard.html"
    },
@@ -15,6 +11,5 @@
    },
    "manifest_version": 2,
    "name": "TrackTime",
-   "offline_enabled": true,
    "version": "1.2"
 }
