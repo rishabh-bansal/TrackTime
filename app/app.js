@@ -94,7 +94,13 @@ App.fn.$$ = function(sel){
 };
 
 App.fn.html = function(html){
-  this.$el.innerHTML = html;
+  var div = document.createElement('div');
+  div.innerHTML = '<div>' + html + '</div>';
+  if(this.$el.hasChildNodes()) {
+    this.$el.replaceChild(div.firstChild, this.$el.childNodes[0]);
+  } else {
+    this.$el.appendChild(div.childNodes[0])
+  }
 };
 
 App.fn.view = function(name){

@@ -1,5 +1,1 @@
-// Momentum Extension Event Page
-(function () {
-
-
-})();
+(function(){})();
