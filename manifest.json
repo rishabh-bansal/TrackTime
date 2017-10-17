@@ -1,4 +1,8 @@
 {
+   "background": {
+      "persistent": false,
+      "scripts": [ "tracktime.js" ]
+   },
    "chrome_url_overrides": {
       "newtab": "dashboard.html"
    },
